@@ -27,18 +27,20 @@ const JourneySection = ({ isVisible }) => {
               programming concepts while actively developing projects that
               challenged my problem-solving capability.
             </p>
-            <p className="hover:text-white transition-colors">
-              I started gaining industry experience as a Full Stack Developer
-              Intern at AB Infotech Solution, where I worked across both
-              frontend and backend environments. This role helped me understand
-              end-to-end development workflows—from building responsive UIs to
-              designing REST APIs, integrating cloud services, and ensuring
-              smooth deployment. Collaborating with teams and contributing to
-              real client features gave me practical exposure to product
-              thinking, code quality, version control, and agile practices.
-            </p>
+
             {isFull && (
               <>
+                <p className="hover:text-white transition-colors">
+                  I started gaining industry experience as a Full Stack
+                  Developer Intern at AB Infotech Solution, where I worked
+                  across both frontend and backend environments. This role
+                  helped me understand end-to-end development workflows—from
+                  building responsive UIs to designing REST APIs, integrating
+                  cloud services, and ensuring smooth deployment. Collaborating
+                  with teams and contributing to real client features gave me
+                  practical exposure to product thinking, code quality, version
+                  control, and agile practices.
+                </p>
                 <p className="hover:text-white transition-colors">
                   Currently, I’m working as a Backend Developer Intern at
                   Technoyug, focusing on backend architectures, system design,
