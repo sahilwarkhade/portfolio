@@ -3,9 +3,9 @@ import {
   ChevronRight,
   Workflow,
 } from "lucide-react";
-import simjob from "../../public/images/simjob.png";
-import epicentra from "../../public/images/epicentra.png";
-import learnnotion from "../../public/images/learnnotion.png";
+import simjob from "../../public/images/simjob.webp";
+import epicentra from "../../public/images/epicentra.webp";
+import learnnotion from "../../public/images/learnnotion.webp";
 import { Card } from "../components/Card";
 import { useNavigate } from "react-router-dom";
 

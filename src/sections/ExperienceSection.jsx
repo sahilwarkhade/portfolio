@@ -11,8 +11,8 @@ const expCards = [
     companyName:"TechnoYug",
     review:
       "At TechnoYug, Sahil showcased strong backend development skills, contributing to the architecture and optimization of multiple server-side modules. His problem-solving approach and clean code practices enhanced overall system stability.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/technoyug.png",
+    imgPath: "/images/exp1.webp",
+    logoPath: "/images/technoyug.webp",
     title: "Backend Developer Intern",
     date: "Oct 2025 - Present",
     responsibilities: [
@@ -26,8 +26,8 @@ const expCards = [
     companyName:"AB Infotech Solution",
     review:
       "Sahil demonstrated excellent full stack capabilities at AB Infotech Solutions. His ability to design, develop, and deploy scalable applications streamlined the project workflow and improved product reliability.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/abis.png",
+    imgPath: "/images/exp2.webp",
+    logoPath: "/images/abis.webp",
     title: "Full Stack Developer Intern",
     date: "Jan 2025 - June 2025",
     responsibilities: [

@@ -13,7 +13,7 @@ export const projects = [
       "Creating a low-latency, real-time interaction system for voice-based interviews while maintaining accuracy and natural flow was challenging. Managing AI responses, TTS/STT synchronization, and scalable server connections demanded robust architecture.",
     solution:
       "Implemented WebSocket-based real-time communication, integrated Gemini API for AI responses, and used Coqui TTS with Whisper for speech synthesis and recognition. Optimized backend for faster response times and consistent interview flow.",
-    image: "/images/simjob.png",
+    image: "/images/simjob.webp",
     category: "AI/ML",
     tech: ["React", "Node.js", "WebSockets", "Gemini", "TTS", "STT"],
     technologies: [
@@ -42,9 +42,9 @@ export const projects = [
       case_study: "#",
     },
     images: [
-      "/images/simjob.png",
-      "/images/simjob.png",
-      "/images/simjob.png",
+      "/images/simjob.webp",
+      "/images/simjob.webp",
+      "/images/simjob.webp",
     ],
     metrics: [
       { label: "Response Latency", value: "< 500ms" },
@@ -68,7 +68,7 @@ export const projects = [
       "Designing a scalable platform capable of managing large amounts of media content and handling secure payments without compromising on speed or user experience.",
     solution:
       "Used Cloudinary for efficient media storage and NodeMailer for communication. Integrated secure payment APIs and Redux Toolkit for state management, ensuring smooth and reliable performance.",
-    image: "/images/learnnotion.png",
+    image: "/images/learnnotion.webp",
     tech: ["React", "Node.js", "MongoDB", "Cloudinary", "Redux Toolkit"],
     technologies: [
       { name: "React", category: "Frontend" },
@@ -94,9 +94,9 @@ export const projects = [
       case_study: "#",
     },
     images: [
-      "/images/learnnotion.png",
-      "/images/learnnotion.png",
-      "/images/learnnotion.png",
+      "/images/learnnotion.webp",
+      "/images/learnnotion.webp",
+      "/images/learnnotion.webp",
     ],
     metrics: [
       { label: "Courses Hosted", value: "100+" },
@@ -120,7 +120,7 @@ export const projects = [
       "Creating a flexible editor with multimedia support while maintaining high performance and responsive UI for large posts.",
     solution:
       "Integrated Editor.js for structured content creation and Cloudinary for efficient media handling. Used MongoDB for scalable data storage and Express for fast API communication.",
-    image: "/images/epicentra.png",
+    image: "/images/epicentra.webp",
     tech: ["React", "Node.js", "Express", "MongoDB", "Editor.js"],
     technologies: [
       { name: "React", category: "Frontend" },
@@ -145,9 +145,9 @@ export const projects = [
       case_study: "#",
     },
     images: [
-      "/images/epicentra.png",
-      "/images/epicentra.png",
-      "/images/epicentra.png",
+      "/images/epicentra.webp",
+      "/images/epicentra.webp",
+      "/images/epicentra.webp",
     ],
     metrics: [
       { label: "Posts Published", value: "500+" },
@@ -171,7 +171,7 @@ export const projects = [
       "Building a safe and scalable sandbox environment to execute untrusted user code while ensuring fast performance and isolation.",
     solution:
       "Used Docker containers for isolated code execution and WebSockets for real-time interaction. Optimized backend task queues to handle multiple concurrent executions efficiently.",
-    image: "/images/compilecode.png",
+    image: "/images/compilecode.webp",
     tech: ["React", "Node.js", "Express", "Docker", "WebSockets"],
     technologies: [
       { name: "React", category: "Frontend" },
@@ -195,9 +195,9 @@ export const projects = [
       case_study: "#",
     },
     images: [
-      "/images/compilecode.png",
-      "/images/compilecode.png",
-      "/images/compilecode.png",
+      "/images/compilecode.webp",
+      "/images/compilecode.webp",
+      "/images/compilecode.webp",
     ],
     metrics: [
       { label: "Supported Languages", value: "10+" },
@@ -220,7 +220,7 @@ export const projects = [
       "Designing an analytics engine to track thousands of link requests efficiently without compromising on speed.",
     solution:
       "Implemented efficient MongoDB indexing, integrated Chart.js for data visualization, and optimized backend routes for handling high request loads.",
-    image: "/images/linkspin.png",
+    image: "/images/linkspin.webp",
     tech: ["React", "Node.js", "Express", "MongoDB", "Chart.js"],
     technologies: [
       { name: "React", category: "Frontend" },
@@ -243,9 +243,9 @@ export const projects = [
       case_study: "#",
     },
     images: [
-      "/images/linkspin.png",
-      "/images/linkspin.png",
-      "/images/linkspin.png",
+      "/images/linkspin.webp",
+      "/images/linkspin.webp",
+      "/images/linkspin.webp",
     ],
     metrics: [
       { label: "Links Shortened", value: "5K+" },
