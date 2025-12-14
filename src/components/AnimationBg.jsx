@@ -51,7 +51,7 @@ const HeroAnimatedObject = () => {
     }
 
     // Initialize particles
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 30; i++) {
       particles.push(new Particle());
     }
 
@@ -153,7 +153,7 @@ const HeroAnimatedObject = () => {
       connectParticles();
 
       // Draw geometric shapes
-    //   drawGeometricShapes();
+      // drawGeometricShapes();
 
       time++;
       animationFrameId = requestAnimationFrame(animate);

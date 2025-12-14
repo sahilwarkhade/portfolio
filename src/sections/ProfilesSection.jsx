@@ -2,22 +2,22 @@ const codingProfiles = [
   {
     name: "GeeksforGeeks",
     url: "https://www.geeksforgeeks.org/user/sahilwark8ih1/",
-    icon: "../../public/images/gfg.svg",
+    icon: "/images/gfg.svg",
   },
   {
     name: "LeetCode",
     url: "https://leetcode.com/sahil_warkhade",
-    icon: "../../public/images/leetcode.webp",
+    icon: "/images/leetcode.webp",
   },
   {
     name: "Codeforces",
     url: "https://codeforces.com",
-    icon: "../../public/images/codeforces.webp",
+    icon: "/images/codeforces.webp",
   },
   {
     name: "GitHub",
     url: "https://github.com/sahilwarkhade",
-    icon: "../../public/images/github.svg",
+    icon: "/images/github.svg",
   },
 ];
 

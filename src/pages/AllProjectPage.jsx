@@ -14,7 +14,7 @@ import HeroAnimatedObject from "../components/AnimationBg";
 
 const categories = ["All", "Web App", "Mobile", "API", "Tool", "AI/ML"];
 
-import { projects } from "../../public/constant";
+import { projects } from "../constant"
 
 export default function ProjectsPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -41,9 +41,9 @@ export default function ProjectsPage() {
 
   return (
     <div className="min-h-screen bg-black text-white mx-auto">
-      <HeroAnimatedObject />
       <section className="border-b border-white/10 mx-auto relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent -mt-6 via-black to-black z-10" />
+        <HeroAnimatedObject />
+        <div className="absolute inset-0 bg-linear-to-b from-transparent -mt-6 via-black to-black z-10" />
         <div
           className="absolute inset-0 opacity-10"
           style={{
@@ -54,7 +54,7 @@ export default function ProjectsPage() {
         />
         <div className="container max-w-[1300px] mx-auto px-6 z-20">
           <div
-            className={`space-y-8 transition-all duration-1000 ${
+            className={`space-y-16 md:space-y-8 transition-all duration-1000 ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-10"
@@ -147,7 +147,9 @@ export default function ProjectsPage() {
                     style={{ transitionDelay: `${index * 100}ms` }}
                     onMouseEnter={() => setHoveredProject(project.id)}
                     onMouseLeave={() => setHoveredProject(null)}
-                    onClick={() => console.log(navigate(`/project/${project.id}`))}
+                    onClick={() =>
+                      console.log(navigate(`/project/${project.id}`))
+                    }
                   >
                     <div
                       className={`space-y-6 ${
@@ -175,10 +177,10 @@ export default function ProjectsPage() {
                         ))}
                       </div>
 
-                      <div className="flex gap-4 pt-4">
+                      <div className="flex gap-4 pt-4 max-md:justify-between">
                         <a
-                          href={project.github}
-                          className="flex items-center gap-2 px-6 py-3 border-2 border-white hover:bg-white hover:text-black transition-all duration-300 group/btn"
+                          href={project.links.github}
+                          className="flex items-center gap-2 px-3 md:px-6 py-1.5 md:py-3 border-2 border-white hover:bg-white hover:text-black transition-all duration-300 group/btn"
                           target="_blank"
                           rel="noopener noreferrer"
                           onClick={(e) => e.stopPropagation()}
@@ -187,10 +189,10 @@ export default function ProjectsPage() {
                           <span>Code</span>
                         </a>
                         <a
-                          href={project.live}
+                          href={project.links.live}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 px-6 py-3 border-2 border-white bg-white text-black hover:bg-black hover:text-white transition-all duration-300 group/btn"
+                          className="flex items-center gap-2 px-3 md:px-6 py-1.5 md:py-3 border-2 border-white bg-white text-black hover:bg-black hover:text-white transition-all duration-300 group/btn"
                           onClick={(e) => e.stopPropagation()}
                         >
                           <span>Live Demo</span>
@@ -253,7 +255,9 @@ export default function ProjectsPage() {
                     style={{ transitionDelay: `${index * 50}ms` }}
                     onMouseEnter={() => setHoveredProject(project.id)}
                     onMouseLeave={() => setHoveredProject(null)}
-                    onClick={() => console.log(navigate(`/project/${project.id}`))}
+                    onClick={() =>
+                      console.log(navigate(`/project/${project.id}`))
+                    }
                   >
                     <div className="relative aspect-video overflow-hidden border-b border-white/10">
                       <img

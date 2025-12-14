@@ -1,6 +1,6 @@
-import { Award, Code2, GitCommit, Github, TrendingUp } from "lucide-react";
+import { Award, Code2, GitCommit, Github } from "lucide-react";
 import { getOverallStats } from "../apis/getStats";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const stats = [
   { icon: Github, label: "GitHub Repos", value: "50+", delay: 0 },
@@ -9,25 +9,37 @@ const stats = [
   { icon: Award, label: "Contributions", value: "1000+", delay: 200 },
 ];
 const StatsSection = ({ isVisible }) => {
-  const [userStats, setUserStats] = useState({});
+  const [userStats, setUserStats] = useState(
+    sessionStorage.getItem("sahilwarkhade-stats")
+      ? JSON.parse(sessionStorage.getItem("sahilwarkhade-stats"))
+      : []
+  );
+
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     (async () => {
-      setLoading(true);
-      const {
-        githubPublicRepos,
-        githubTotalCommits,
-        leetCodeSolved,
-        leetCodeContribution,
-      } = await getOverallStats("sahilwarkhade", "sahil_warkhade");
+      if (userStats.length === 0) {
+        setLoading(true);
 
-      setUserStats([
-        githubPublicRepos,
-        githubTotalCommits,
-        leetCodeSolved,
-        leetCodeContribution,
-      ]);
-      setLoading(false);
+        const {
+          githubPublicRepos,
+          githubTotalCommits,
+          leetCodeSolved,
+          leetCodeContribution,
+        } = await getOverallStats("sahilwarkhade", "sahil_warkhade");
+
+        const stats = [
+          githubPublicRepos,
+          githubTotalCommits,
+          leetCodeSolved,
+          leetCodeContribution,
+        ];
+
+        setUserStats(stats);
+        sessionStorage.setItem("sahilwarkhade-stats", JSON.stringify(stats));
+
+        setLoading(false);
+      }
     })();
   }, []);
 
@@ -67,7 +79,7 @@ const StatsSection = ({ isVisible }) => {
                     <Icon className="w-8 h-8 group-hover:text-black" />
                   </div>
                   <div className="text-4xl font-bold mb-2 group-hover:scale-110 transition-transform">
-                    {loading ? "00" : userStats[index] }
+                    {loading ? "00" : userStats[index]}
                   </div>
                   <div className="text-gray-400 text-sm uppercase tracking-wider">
                     {stat.label}
@@ -92,11 +104,11 @@ const StatsSection = ({ isVisible }) => {
                 </p>
                 <div className="flex gap-4">
                   <div className="flex-1 bg-black p-4 rounded">
-                    <div className="text-2xl font-bold">250+</div>
+                    <div className="text-2xl font-bold">100+</div>
                     <div className="text-sm text-gray-400">Stars</div>
                   </div>
                   <div className="flex-1 bg-black p-4 rounded">
-                    <div className="text-2xl font-bold">100+</div>
+                    <div className="text-2xl font-bold">50+</div>
                     <div className="text-sm text-gray-400">Followers</div>
                   </div>
                 </div>
@@ -133,4 +145,4 @@ const StatsSection = ({ isVisible }) => {
   );
 };
 
-export default StatsSection;
+export default React.memo(StatsSection);

@@ -2,6 +2,7 @@ export const projects = [
   {
     id: 1,
     title: "SimJob",
+    year:2025,
     tagline: "AI-powered mock interview platform for real-time interview preparation.",
     category: "AI/ML",
     duration: "4 months",
@@ -37,7 +38,7 @@ export const projects = [
       "AI-driven feedback and analysis",
     ],
     links: {
-      github: "https://github.com/sahilwarkhade/simjob",
+      github: "https://github.com/sahilwarkhade/simjob_client",
       live: "https://simjob.space",
       case_study: "#",
     },
@@ -57,6 +58,7 @@ export const projects = [
   {
     id: 2,
     title: "LearnNotion",
+    year:2024,
     tagline: "Next-gen Learning Management System for course creation and delivery.",
     category: "Web App",
     duration: "3 months",
@@ -89,7 +91,7 @@ export const projects = [
       "Email notifications for users",
     ],
     links: {
-      github: "https://github.com/sahilwarkhade/learnnotion",
+      github: "https://github.com/sahilwarkhade/LearnNotion_Client",
       live: "https://learnnotion.vercel.app",
       case_study: "#",
     },
@@ -109,6 +111,7 @@ export const projects = [
   {
     id: 3,
     title: "Epicentra",
+    year:2024,
     tagline: "Community blogging platform for creators and readers.",
     category: "Web App",
     duration: "3 months",
@@ -140,7 +143,7 @@ export const projects = [
       "SEO-friendly blog URLs",
     ],
     links: {
-      github: "https://github.com/sahilwarkhade/epicentra",
+      github: "https://github.com/sahilwarkhade/Epicentra-Frontend",
       live: "https://epicentra.vercel.app",
       case_study: "#",
     },
@@ -155,7 +158,7 @@ export const projects = [
       { label: "Load Time", value: "< 2s" },
       { label: "Uptime", value: "99.9%" },
     ],
-    featured: true,
+    featured: false,
   },
   {
     id: 4,
@@ -190,7 +193,7 @@ export const projects = [
       "Syntax highlighting editor",
     ],
     links: {
-      github: "https://github.com/sahilwarkhade/compilecode",
+      github: "https://github.com/sahilwarkhade/Compilecode_Client",
       live: "https://compilecode.vercel.app",
       case_study: "#",
     },
@@ -238,7 +241,7 @@ export const projects = [
       "Responsive modern UI",
     ],
     links: {
-      github: "https://github.com/sahilwarkhade/linkspin",
+      github: "https://github.com/sahilwarkhade/shortURL-service",
       live: "https://linkspin.vercel.app",
       case_study: "#",
     },
@@ -254,4 +257,70 @@ export const projects = [
     ],
     featured: false,
   },
+  {
+  id: 6,
+  title: "RagStudio",
+  year:"2025",
+  tagline: "AI-powered document intelligence and conversational RAG platform.",
+  category: "AI/ML",
+  duration: "15 Days",
+  role: "Full Stack Developer",
+  status: "Live",
+  description:
+    "RagStudio is an AI-powered document intelligence platform that enables users to upload PDFs and interact with their content through a conversational interface using Retrieval-Augmented Generation (RAG). The system processes documents asynchronously, stores embeddings in a vector database, and delivers context-aware, low-latency responses.",
+  challenge:
+    "Designing a scalable and non-blocking document ingestion pipeline capable of handling large PDFs, real-time conversations, and AI-driven retrieval without impacting API performance.",
+  solution:
+    "Implemented an asynchronous worker-based architecture using BullMQ and Redis to offload PDF parsing, chunking, and embedding generation, combined with Qdrant vector search and WebSocket-based real-time chat for low-latency, scalable interactions.",
+  image: "/images/ragstudio.webp",
+  tech: [
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Redis",
+    "BullMQ",
+    "LangChain",
+    "Qdrant",
+    "WebSockets",
+    "NGINX",
+    "GCP",
+  ],
+  technologies: [
+    { name: "Node.js", category: "Backend" },
+    { name: "Express", category: "Framework" },
+    { name: "MongoDB", category: "Database" },
+    { name: "Redis", category: "Cache / Queue" },
+    { name: "BullMQ", category: "Background Jobs" },
+    { name: "LangChain", category: "AI / NLP" },
+    { name: "Qdrant", category: "Vector Database" },
+    { name: "WebSockets", category: "Realtime" },
+    { name: "NGINX", category: "Infrastructure" },
+    { name: "GCP VM", category: "Cloud" },
+  ],
+  features: [
+    "PDF upload and intelligent document ingestion",
+    "Asynchronous processing with background workers",
+    "Vector-based semantic search using Qdrant",
+    "Conversational AI powered by RAG",
+    "Real-time chat using WebSockets",
+    "Secure authentication and user-specific document isolation",
+    "Document lifecycle management (upload, process, delete)",
+  ],
+  links: {
+    github: "https://github.com/sahilwarkhade/rag-studio-backend",
+    live: "https://rag.sahilwarkhade.com",
+    case_study: "#",
+  },
+  images: [
+    "/images/ragstudio.webp",
+    "/images/ragstudio.webp",
+    "/images/ragstudio.webp",
+  ],
+  metrics: [
+    { label: "Documents Processed", value: "1K+" },
+    { label: "Avg Query Latency", value: "< 500ms" },
+    { label: "Uptime", value: "99.9%" },
+  ],
+  featured: true,
+}
 ];

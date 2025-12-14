@@ -45,7 +45,10 @@ const Navbar = ({ setShowScrollUp }) => {
                   className="block text-white text-sm font-semibold my-4 md:my-0 md:ml-6 hover:text-[#dc143c] hover:scale-105 transition duration-300"
                   onClick={() => {
                     setIsMenuOpen(false);
-                    location.pathname !== "/" && item !== 'Work' && navigate("/");
+                    location.pathname !== "/" && item !== 'work' && navigate("/");
+                    if(item === "Contact"){
+                      navigate("/contact")
+                    }
                   }}
                 >
                   {item}

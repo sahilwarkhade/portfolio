@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import userImage from "../../public/images/sahilwarkhade--profile.webp";
+import userImage from "/images/sahilwarkhade--profile.webp";
 
 const HeroSection = () => {
   const navigate = useNavigate();
@@ -8,7 +8,7 @@ const HeroSection = () => {
       id="home"
       className="mx-auto relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black to-black z-10" />
+      <div className="absolute inset-0 bg-linear-to-b from-transparent via-black to-black z-10 -top-45 md:top-0" />
       <div
         className="absolute inset-0 opacity-10"
         style={{
@@ -28,7 +28,7 @@ const HeroSection = () => {
             </div>
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
               Hi, I'm
-              <span className="block bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent">
+              <span className="block bg-linear-to-r from-white to-gray-500 bg-clip-text text-transparent">
                 Sahil Warkhade
               </span>
             </h1>
@@ -38,7 +38,7 @@ const HeroSection = () => {
               learn.
             </p>
             <div className="flex gap-4 pt-4">
-              <button className="px-8 py-3 bg-white text-black font-semibold hover:bg-gray-200 transition-all transform hover:scale-105 cursor-pointer" onClick={()=>navigate('/projects')}>
+              <button className="px-6 md:px-8 py-2 md:py-3 bg-white text-black font-semibold hover:bg-gray-200 transition-all transform hover:scale-105 cursor-pointer" onClick={()=>navigate('/projects')}>
                 View All Projects
               </button>
               <button className="px-8 py-3 border-2 border-white hover:bg-white hover:text-black transition-all transform hover:scale-105 cursor-pointer" onClick={()=>navigate('/contact')}>
@@ -48,9 +48,9 @@ const HeroSection = () => {
           </div>
 
           <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-white to-gray-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+            <div className="absolute -inset-1 bg-linear-to-r from-white to-gray-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
             <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white">
-              <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center text-6xl">
+              <div className="w-full h-full bg-linear-to-br from-gray-800 to-gray-900 flex items-center justify-center text-6xl">
                 <img src={userImage} alt="hero-image" fetchPriority="high"/>
               </div>
             </div>

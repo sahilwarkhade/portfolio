@@ -11,7 +11,7 @@ import {
   Tag,
 } from "lucide-react";
 import { useNavigate, useParams } from "react-router-dom";
-import { projects } from "../../public/constant";
+import { projects } from "../constant";
 
 const ProjectDescriptionPage = () => {
   const [activeImage, setActiveImage] = useState(0);

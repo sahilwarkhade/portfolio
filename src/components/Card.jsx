@@ -1,5 +1,5 @@
 import { twMerge } from "tailwind-merge";
-import grainImage from "../../public/images/grain.jpg";
+import grainImage from "/images/grain.jpg";
 export const Card = ({ className, children, ...other }) => {
   return (
     <div

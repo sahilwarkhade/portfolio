@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import userImage from "../../public/images/sahilwarkhade--profile.png";
+import userImage from "/images/sahilwarkhade--profile.png";
 const AboutSection = () => {
   const navigate=useNavigate();
   return (
