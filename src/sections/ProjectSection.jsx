@@ -1,7 +1,7 @@
 import { Check, ChevronRight, Workflow } from "lucide-react";
 import { Card } from "../components/Card";
 import { useNavigate } from "react-router-dom";
-import { projects } from "../../public/constant";
+import { projects } from "../constant";
 
 const featuredProjects = projects.filter((p) => p.featured);
 
